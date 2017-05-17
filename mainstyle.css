@@ -4,3 +4,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+
+
+.main-nav {
+  display: none;
+  padding: 0;
+  list-style: none;
+}

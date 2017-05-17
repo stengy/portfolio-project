@@ -10,3 +10,9 @@ function Project(rawDataObj){
   this.dateCompleted = rawDataObj.dateCompleted;
   this.body = rawDataObj.body;
 }
+
+Project.prototype.toHtml = function() {
+  var $newProject = $('project.template').clone();
+  $newProject.removeclass('template');
+  
+}
