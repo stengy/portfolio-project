@@ -24,3 +24,10 @@
 body {
   background-color: grey;
 }
+
+
+@media on screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+}
