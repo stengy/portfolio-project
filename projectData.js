@@ -7,6 +7,24 @@ var rawData = [
     projectImg: '#',
     collaborators: 'Michael Axelson, Stephanie Dover, Ryan Turner',
     dateCompleted: '04-28-2017',
-    body: <p> Words! Description! Delight! </p>,
+    body: <p> `Words! Description! Delight! `</p>,
+  },
+
+  {
+    title: 'Busmall',
+    projectUrl: '',
+    projectImg: '#',
+    collaborators: 'None',
+    dateCompleted: '#',
+    body: <p> `this was crazy hard!` </p>
+  },
+
+  {
+    title: 'Salmon Cookies',
+    projectUrl: '#',
+    projectImg: '#',
+    collaborators: 'None',
+    dateCompleted: '#',
+    body: <p> 'Salmon cookies???' </p>
   }
 ]

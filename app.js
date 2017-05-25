@@ -14,5 +14,9 @@ function Project(rawDataObj){
 Project.prototype.toHtml = function() {
   var $newProject = $('project.template').clone();
   $newProject.removeclass('template');
-  
+  if (!this.dateCompleted) {
+    $newProject.addClass('In progress');
+  }
+  $newProject.find('#').html(this.title);
+  $
 }
