@@ -7,7 +7,7 @@ var rawData = [
     projectImg: '#',
     collaborators: 'Michael Axelson, Stephanie Dover, Ryan Turner',
     dateCompleted: '04-28-2017',
-    body: <p> `Words! Description! Delight! `</p>,
+    body: `<p> Words! Description! Delight! </p>`
   },
 
   {
@@ -16,7 +16,7 @@ var rawData = [
     projectImg: '#',
     collaborators: 'None',
     dateCompleted: '#',
-    body: <p> `this was crazy hard!` </p>
+    body: `<p> this was crazy hard! </p>`
   },
 
   {
@@ -25,6 +25,6 @@ var rawData = [
     projectImg: '#',
     collaborators: 'None',
     dateCompleted: '#',
-    body: <p> 'Salmon cookies???' </p>
+    body: `<p> Salmon cookies??? </p>`
   }
 ]
