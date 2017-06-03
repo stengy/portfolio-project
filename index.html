@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-sccale=1"/>
   <title> Main Profile </title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="mainstyle.css" />
-  <link rel="stylesheet" href="/style/icons.css">
-  <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+
 </head>
 <body>
   <header>
@@ -19,11 +19,11 @@
       </div>
     </section>
     <nav class="main-nav">
-      <div class="icon-menu"> </div>
+      <div class="fa fa-bars"> </div>
       <ul>
         <li> <a href="#"> Home </a> </li>
         <li> <a href="#"> About Me </a> </li>
-        <li><a href="https://github.com/stengy" target="_blank" class="icon-github">GitHub</a></li>
+        <li><a href="https://github.com/stengy" class="fa fa-github-alt">GitHub</a></li>
         <li><a href="https://twitter.com" target="_blank" class="icon-twitter3">Twitter</a></li>
       </ul>
 
@@ -31,10 +31,19 @@
   </header>
   <main>
     <section id="projects" class="tab-content">
-      <div class="project-bubble">
-        
+      <div class="template">
+        <h2><a href="">title </a> </h2>
+        <img src="#" />
+        <div id="collabs"></div>
+        completed <time pubdate="2000-01-01"> completed time </time>
       </div>
+      <section class="project-body"></section>
+    </section>
 
+    <section id="about" class="about-box" >
+      <h2> About Me </h2>
+      <img src="#" />
+      <div class="about-body"></div>
     </section>
   <script
   src="https://code.jquery.com/jquery-3.2.1.js"
