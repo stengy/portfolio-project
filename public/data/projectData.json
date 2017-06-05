@@ -1,0 +1,29 @@
+
+ [
+  {
+    "title": "Wine Fellows",
+    "projectUrl": "https://axelmichael11.github.io/Wine_Fellows/",
+    "projectImg": "#",
+    "collaborators": "Michael Axelson, Stephanie Dover, Ryan Turner",
+    "dateCompleted": "04-28-2017",
+    "body":" Words! Description! Delight!"
+  },
+
+  {
+    "title": "Busmall",
+    "projectUrl": "",
+    "projectImg": "#",
+    "collaborators": "None",
+    "dateCompleted": "#",
+    "body": "this was crazy hard!"
+  },
+
+  {
+    "title": "Salmon Cookies",
+    "projectUrl": "#",
+    "projectImg": "#",
+    "collaborators": "None",
+    "dateCompleted": "#",
+    "body": "Salmon cookies???"
+  }
+]

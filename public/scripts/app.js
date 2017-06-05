@@ -1,6 +1,5 @@
 'use strict'
 
-var projects = [];
 
 function Project(rawDataObj){
   this.title = rawDataObj.title;
@@ -11,15 +10,34 @@ function Project(rawDataObj){
   this.body = rawDataObj.body;
 }
 
+Project.all = [];
+
 Project.prototype.toHtml = function() {
-  const projectPopulate = Handlebars.compile($('.projects-template').html());
-  return projectPopulate(this);
+  const projectRender = Handlebars.compile($('.projects-template').html());
+  return projectRender(this);
 }
 
-rawData.forEach(function (projectObj){
-  projects.push(new Project(projectObj));
-});
+Project.loadAll = function(rawData){
+  rawData.forEach(function(ele){
+    Project.all.push(new Project (ele));
+  })
+}
 
-projects.forEach(function(project){
-  $('#projects').append(project.toHtml());
-});
+
+Project.fetchAll = function(){
+  if (localStorage.projects) {
+    Project.loadAll(JSON.parse(localStorage.projects));
+  } else {
+    $.getJSON('data/projectData.json').then(function(rawData){
+      localStorage.projects = JSON.stringify(rawData);
+      Project.loadAll(rawData);
+      Project.all.forEach(function(project){
+        $('#projects').append(project.toHtml());
+      });
+    },
+    function(err){
+      console.log(err);
+    }
+  )
+  }
+}
