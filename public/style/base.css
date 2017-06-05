@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+nav li{
+  display: inline;
+  padding: 10px 20px ;
+  font-size: 1.5em;
+
+}
+
+.img{
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+
+}
+
+li{
+  color: white;
+}
+
+h1{
+  font-size: 4em;
+}
+
+h2{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 2em;
+}

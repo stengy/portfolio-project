@@ -5,7 +5,20 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="style/mainstyle.css" />
+  <link rel="stylesheet" type="text/css" href="style/base.css" />
+  <link rel="stylesheet" type="text/css" href="style/layout.css" />
+  <link rel="stylesheet" type="text/css" href="style/modules.css" />
+
+  <script class="projects-template" type="text/x-handlebars-template">
+    <div class="project-box">
+      <h2><a href={{projectUrl}} class="project-title"> {{title}}</a></h2>
+      <img src={{projectUrl}} />
+      <div class"collabs">Collabrators: {{collaborators}}</div>
+      <div class="project-date"> {{dateCompleted}} </div>
+      <p class="project-body"> {{{body}}} </p>
+    </div>
+
+  </script>
 
 </head>
 <body>
@@ -24,32 +37,27 @@
         <li> <a href="#"> Home </a> </li>
         <li> <a href="#"> About Me </a> </li>
         <li><a href="https://github.com/stengy" class="fa fa-github-alt">GitHub</a></li>
-        <li><a href="https://twitter.com" target="_blank" class="icon-twitter3">Twitter</a></li>
       </ul>
 
     </nav>
   </header>
   <main>
-    <section id="projects" class="tab-content">
-      <div class="template">
-        <h2><a href="">title </a> </h2>
-        <img src="#" />
-        <div id="collabs"></div>
-        completed <time pubdate="2000-01-01"> completed time </time>
-      </div>
-      <section class="project-body"></section>
+    <section id="projects" class="projects" class="tab-content">
+
     </section>
+
 
     <section id="about" class="about-box" >
       <h2> About Me </h2>
       <img src="#" />
       <div class="about-body"> I am a mad hatter hacker!</div>
     </section>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-  <script src="projectData.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="data/projectData.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+  </html>

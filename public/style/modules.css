@@ -20,12 +20,22 @@
 
 
 .fa-bars {
-  /*display: none;*/
+  display: none;
   font-size: 3em;
   color: #FFF;
   padding: 1rem;
 }
 
+.brand{
+  display: inline;
+  float: left;
+  font-size: 2.5em;
+  color: #FFF;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 3vw;
+  background-color: #2c579e;
+}
 
 /*Info Blurb Region*/
 
@@ -35,10 +45,41 @@
   border-radius: 15%
 }
 
+/*About Region*/
+.about-box{
+  position: relative;
+  top: 15vh;
+  margin: auto;
+  width: 85vw;
+  height: 60%;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.about-box h2{
+  padding-top: 4vh;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 600;
+  margin: auto;
+}
+
+.about-body{
+  position: block;
+  color:black;
+  margin-top: 10vh;
+  text-align: justify;
+  background-color: blue;
+  width: 60vw;
+  margin-left: 3%;
+  padding: 1vw 1.5vh;
+}
 
 
 /*Project Region*/
-.project-box{
+.portfolio-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -65,36 +106,4 @@
   height: 40%;
   background-color: grey;
   color: #FFF;
-}
-
-/*About Region*/
-.about-box{
-  position: relative;
-  top: 15vh;
-  margin: auto;
-  width: 85vw;
-  height: 60%;
-  color: white;
-  text-align: center;
-  background-color: black;
-  border-radius: 4px;
-}
-
-.about-box h2{
-  padding-top: 4vh;
-  color: white;
-  font-size: 3em;
-  font-weight: 600;
-  margin: auto;
-}
-
-.about-body{
-  position: block;
-  color: yellow;
-  margin-top: 10vh;
-  text-align: justify;
-  background-color: blue;
-  width: 60vw;
-  margin-left: 3%;
-  padding: 1vw 1.5vh;
 }
