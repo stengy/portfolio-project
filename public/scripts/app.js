@@ -51,5 +51,16 @@ var app = app || {};
     });
   }
 
+  // Creating temporary word count function//
+  // Will replace when I figure out what to do with map and reduce//
+
+  Project.descriptionWordCount = function() {
+    let totalCount = Project.all.map((data) => {
+      return data.body.split(' ').length;
+    })
+    .reduce((t, c) => t + c);
+    console.log(`Developer wrote a total of ${totalCount} words in the description of all projects.`);
+  }
+
   module.Project = Project;
 })(app);
