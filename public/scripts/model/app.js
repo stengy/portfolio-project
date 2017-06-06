@@ -34,9 +34,7 @@ var app = app || {};
       $.getJSON('data/projectData.json').then(function(rawData){
         Project.loadAll(rawData);
         localStorage.rawData = JSON.stringify(rawData);
-        // Project.all.forEach(function(project){
-        //   // $('#projects').append(project.toHtml());
-        // });
+
       },
       function(err){
         console.log(err);
