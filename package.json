@@ -1,10 +1,9 @@
 {
   "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "My Portfolio",
-  "main": "index.js",
+  "description": "Devin Portfolio",
+  "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.17.2",
     "express": "^4.15.3"
   },
   "devDependencies": {},
@@ -21,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/stengy/portfolio-project/issues"
   },
-  "homepage": "https://github.com/stengy/portfolio-project#readme",
-  "keywords": [
-    "hax"
-  ]
+  "homepage": "https://github.com/stengy/portfolio-project#readme"
 }
