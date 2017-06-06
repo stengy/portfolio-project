@@ -14,8 +14,7 @@ var app = app || {};
       method: 'GET',
       headers: {Authorization: `token ${gitToken}`}
     }).then(data => {
-      data.forEach(repo => {
-        repos.all.push(repo);
+      repos.all = data;
       })
       if(cb) {cb()}
     });
