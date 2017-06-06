@@ -6,8 +6,8 @@
     "page": true,
     "$": true,
     "marked": true,
-    "hljs": true,
-    "gitToken": true
+    "hljs": true
+
   },
   "extends": "eslint:recommended",
   "parserOptions": {
@@ -18,8 +18,8 @@
     "browser": true,
     "jquery": true,
     "node": true,
-    "es6": true,
-    "gitToken": true
+    "es6": true
+    
   },
   "rules": {
     "eqeqeq": ["error", "always"],

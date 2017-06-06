@@ -15,11 +15,11 @@ var app = app || {};
       headers: {Authorization: `token ${gitToken}`}
     }).then(data => {
       repos.all = data;
-      })
-      if(cb) {cb()}
-    });
+    })
+    if(cb) {cb()}
 
   };
 
+  repos.with = attr => repos.all.filter(repo => repo[attr]);
   module.repos = repos;
 })(app);
