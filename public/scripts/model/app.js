@@ -27,13 +27,13 @@ var app = app || {};
   }
 
   Project.fetchAll = function(){
-    if (localStorage.projects) {
-      Project.loadAll(JSON.parse(localStorage.projects));
-      app.displayView.initIndex();
+    if (localStorage.rawData) {
+      Project.loadAll(JSON.parse(localStorage.rawData));
+
     } else {
       $.getJSON('data/projectData.json').then(function(rawData){
         Project.loadAll(rawData);
-        localStorage.projects = JSON.stringify(rawData);
+        localStorage.rawData = JSON.stringify(rawData);
         // Project.all.forEach(function(project){
         //   // $('#projects').append(project.toHtml());
         // });

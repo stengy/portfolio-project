@@ -9,7 +9,7 @@ var app = app || {};
     $('#projects').hide();
     $('#about').hide();
 
-    
+
   }
 
   module.homeController = homeController;

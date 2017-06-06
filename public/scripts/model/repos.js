@@ -11,14 +11,9 @@ var app = app || {};
 
   repos.fetchRepos = function (cb) {
 
-    $.ajax({
-      url: 'https://api.github.com/user/repos',
-      method: 'GET',
-      headers: {Authorization: `token ${gitToken}`}
-    }).then(data => {
-      repos.all = data;
-    })
-    if(cb) {cb()}
+    $.get('/github/users/repos').then(
+      data => repos.all = data, err => console.error(err)
+    ).then(cb)
 
   };
 
