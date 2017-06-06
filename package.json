@@ -1,7 +1,7 @@
 {
   "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Portfolio",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/stengy/portfolio-project/issues"
   },
-  "homepage": "https://github.com/stengy/portfolio-project#readme"
+  "homepage": "https://github.com/stengy/portfolio-project#readme",
+  "keywords": [
+    "hax"
+  ]
 }
