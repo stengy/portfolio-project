@@ -1,39 +1,117 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  height: 100%;
+  width: 100%;
   background-color: grey;
 }
+
 nav li{
   display: inline;
-  padding: 10px 20px ;
-  font-size: 1.5em;
 
 }
 
-.img{
-  max-width: 100%;
+a {
+  text-decoration: none;
 }
 
 nav a {
-  text-decoration: none;
   color: white;
-  font-weight: 600;
-
 }
 
 li{
   color: white;
+  display: inline;
 }
 
-h1{
-  font-size: 4em;
-}
 
 h2{
-  font-size: 3em;
+  font-size: 30px;
 }
 
 h3{
-  font-size: 2em;
+  font-size: 25px;
+}
+
+.my-info img{
+  width: 40px;
+  height:auto;
+  border-radius: 7px;
+}
+
+.fa.fa-bars {
+  display: inline-block;
+}
+
+#ham {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: right;
+  float: right;
+  font-size: 25px;
+}
+.main-nav {
+  text-align:center;
+  display: inline;
+  padding: 0.1em;
+  font-size: 1.5em;
+  float:left;
+  width: 100%;
+
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav ul{
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav li {
+  display: inline;
+  margin-right: .2em;
+  font-size: 1em;
+}
+
+.nav-menu {
+  text-align: center;
+  display:inline;
+  width:33%;
+  margin-top: 14px;
+  margin-right: 213px;
+}
+
+ul li {
+  text-align: center;
+  display: inline;
+}
+
+
+@media screen and (min-width: 715px) {
+   .fa.fa-bars {
+     display: none;
+   }
+   .main-nav ul, li {
+     display: inline-block;
+     font-size: 1em;
+     padding: .5em 0 .5em 0;
+   }
+   .main-nav:hover ul, li {
+     display: inline-block;
+   }
+   .nav-menu {
+     text-align: center;
+     display:inline;
+     width:33%;
+     margin-top: 14px;
+     margin-right: 213px;
+   }
 }

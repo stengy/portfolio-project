@@ -13,7 +13,7 @@ var app = app || {};
     $about.show().siblings().hide();
   };
 
-  let render = Handlebars.compile($('#repoTemplate').text());
+  let render = Handlebars.compile($('#repo-template').text());
 
   repoView.index = function() {
     ui();

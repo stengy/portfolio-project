@@ -28,9 +28,9 @@ function proxyGitHub(request, response) {
 
 app.get('/github/*', proxyGitHub);
 
-// app.get('/index', function(request, response) {
-//   response.sendFile('./index.html', {root: '.'});
-// });
+app.get('/index', function(request, response) {
+  response.sendFile('./index.html', {root: '.'});
+});
 
 app.listen(PORT, function(){
   console.log('Listening in port:' + PORT);

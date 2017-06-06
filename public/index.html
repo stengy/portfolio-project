@@ -7,7 +7,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="style/base.css" />
   <link rel="stylesheet" type="text/css" href="style/layout.css" />
-  <link rel="stylesheet" type="text/css" href="style/modules.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="style/modules.css" /> -->
 
   <script class="projects-template" type="text/x-handlebars-template">
     <div class="project-box">
@@ -19,7 +19,7 @@
     </div>
   </script>
 
-  <script id="repoTemplate" type="text/x-handlebars-template">
+  <script id="repo-template" type="text/x-handlebars-template">
     <li>
         <a href="{{html_url}}" target="_blank">
           <h3>{{name}}</h3>
@@ -51,7 +51,7 @@
     </section>
     <nav class="main-nav">
       <div id="ham" class="fa fa-bars"> </div>
-      <ul>
+      <ul class="nav-menu">
         <li> <a href="/"> Home </a> </li>
         <li> <a href="/about"> About Me </a> </li>
         <li> <a href="/projects"> Projects </a> </li>
@@ -66,17 +66,15 @@
 
 
     <section id="about" class="about-box" class="tab-content" >
-      <h2> About Me </h2>
+      <h2> About </h2>
       <img src="#" />
       <div class="about-body"> I am a mad hatter hacker!</div>
       <ul>
-
+        <li> </li>
       </ul>
     </section>
 
-    <section id="repoBox" class="repo-box">
 
-    </section>
     <!-- Libs -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
