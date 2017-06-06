@@ -29,7 +29,7 @@ var app = app || {};
   Project.fetchAll = function(){
     if (localStorage.projects) {
       Project.loadAll(JSON.parse(localStorage.projects));
-      Project.initIndex();
+      app.displayView.initIndex();
     } else {
       $.getJSON('data/projectData.json').then(function(rawData){
         localStorage.projects = JSON.stringify(rawData);
@@ -45,11 +45,7 @@ var app = app || {};
     }
   }
 
-  Project.initIndex = function() {
-    Project.all.forEach(function(project){
-      $('#projects').append(project.toHtml())
-    });
-  }
+
 
   // Creating temporary word count function//
   // Will replace when I figure out what to do with map and reduce//
