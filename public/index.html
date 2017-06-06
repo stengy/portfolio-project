@@ -17,9 +17,22 @@
       <div class="project-date"> {{dateCompleted}} </div>
       <p class="project-body"> {{{body}}} </p>
     </div>
-
   </script>
 
+  <script id="repoTemplate" type="text/x-handlebars-template">
+    <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+  </script>
 </head>
 <body>
   <header>
@@ -41,6 +54,7 @@
       <ul>
         <li> <a href="/"> Home </a> </li>
         <li> <a href="/about"> About Me </a> </li>
+        <li> <a href="/projects"> Projects </a> </li>
       </ul>
 
     </nav>
@@ -51,10 +65,17 @@
     </section>
 
 
-    <section id="about" class="about-box" >
+    <section id="about" class="about-box" class="tab-content" >
       <h2> About Me </h2>
       <img src="#" />
       <div class="about-body"> I am a mad hatter hacker!</div>
+      <ul>
+
+      </ul>
+    </section>
+
+    <section id="repoBox" class="repo-box">
+
     </section>
     <!-- Libs -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -63,8 +84,12 @@
     <!-- Files -->
     <script src="scripts/view/display.js"></script>
     <script src="scripts/model/app.js"></script>
+    <script src="/ghtoken.js"></script>
     <script src="scripts/model/repos.js"></script>
+    <script src="scripts/view/repoView.js"></script>
+    <script src="scripts/controller/homeController.js"></script>
     <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/projectController.js"></script>
     <script src="scripts/controller/routes.js"></script>
     <script> app.Project.fetchAll();
     app.Project.descriptionWordCount();

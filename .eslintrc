@@ -1,5 +1,6 @@
 {
   "globals" : {
+    "gitToken": true,
     "rawData": true,
     "app": true,
     "Handlebars": true,
@@ -19,7 +20,7 @@
     "jquery": true,
     "node": true,
     "es6": true
-    
+
   },
   "rules": {
     "eqeqeq": ["error", "always"],
