@@ -3,7 +3,7 @@
   {
     "title": "Wine Fellows",
     "projectUrl": "https://axelmichael11.github.io/Wine_Fellows/",
-    "projectImg": "#",
+    "projectImg": "imgs/winegroup.jpg",
     "collaborators": "Michael Axelson, Stephanie Dover, Ryan Turner",
     "dateCompleted": "04-28-2017",
     "body":" Words! Description! Delight!"
@@ -12,18 +12,10 @@
   {
     "title": "Trivia Ninja",
     "projectUrl": "https://trivia-ninja.herokuapp.com/",
-    "projectImg": "#",
+    "projectImg": "imgs/ninja-star-18485.jpg",
     "collaborators": "Nicu Parente, Michael Porter",
     "dateCompleted": "06-02-2017",
     "body": "One of the best collaborative experiences of my entire life"
-  },
-
-  {
-    "title": "Salmon Cookies",
-    "projectUrl": "#",
-    "projectImg": "#",
-    "collaborators": "None",
-    "dateCompleted": "#",
-    "body": "Salmon cookies???"
   }
+
 ]

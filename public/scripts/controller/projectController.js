@@ -6,11 +6,11 @@ var app = app || {};
   const projectController = {};
 
   projectController.init = function() {
-    $('#about').hide();
     $('.tab-content').hide();
+    $('#about').hide();
 
-    $('#projects').fadeIn(500);
-  }
+    $('#portfolio').fadeIn(500);
+  };
 
   module.projectController = projectController;
 })(app);

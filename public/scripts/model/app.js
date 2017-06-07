@@ -24,6 +24,10 @@ var app = app || {};
     Project.all = rawData.map(function(project) {
       return new Project(project);
     })
+
+    Project.all.map(function(project) {
+      $('#portfolio').append(project.toHtml());
+    });
   }
 
   Project.fetchAll = function(){

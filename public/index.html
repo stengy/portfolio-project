@@ -14,7 +14,7 @@
       <h2><a href={{projectUrl}} class="project-title"> {{title}}</a></h2>
       <img src={{projectUrl}} />
       <div class"collabs">Collabrators: {{collaborators}}</div>
-      <div class="project-date"> {{dateCompleted}} </div>
+      <div class="project-date">Date Completed: {{dateCompleted}} </div>
       <p class="project-body"> {{{body}}} </p>
     </div>
   </script>
@@ -36,38 +36,37 @@
 </head>
 <body>
   <header>
-    <section class="my-info">
-      <div class="my-pic-box">
-        <img src="imgs/ninja.jpg" class="my-pic"/>
-      </div>
-      <div>
-        <h3>Devin Griswold</h3>
-        <ul>
-          <li><a href="https://github.com/stengy" class="fa fa-github-alt"> GitHub</a></li>
-          <li><a href="http://www.twitter.com" class="fa fa-twitter"> Twitter</a></li>
-        </ul>
-      </div>
-
-    </section>
     <nav class="main-nav">
-      <div id="ham" class="fa fa-bars"> </div>
-      <ul class="nav-menu">
-        <li> <a href="/"> Home </a> </li>
-        <li> <a href="/about"> About Me </a> </li>
-        <li> <a href="/projects"> Projects </a> </li>
+      <section class="connect">
+        <a href="https://github.com/stengy" class="fa fa-github-alt"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+        <a href="mailto:engy100x@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </section>
+      <div class="ham"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+      <ul>
+        <li data-content="home"><a href="/" class="nav-link">home</a></li>
+        <li data-content="projects"><a href="/portfolio" class="nav-link">projects</a></li>
+        <li data-content="about"><a href="/about" class="nav-link">about</a></li>
       </ul>
-
     </nav>
+
   </header>
   <main>
-    <section id="projects" class="projects" class="tab-content">
+    <section id="home" class="tab-content">
+      <h3> Devin J. Griswold </h3>
+      <div id="myPic">
+        <img src="imgs/madleet.png" />
+      </div>
+
+    </section>
+    <section id="portfolio" class="project-box" class="tab-content">
 
     </section>
 
 
-    <section id="about" class="about-box" class="tab-content" >
-      <h2> About </h2>
-      <img src="#" />
+    <section id="about" class="tab-content" >
+      <h2> About Me </h2>
+      <img src="imgs/dev.jpg" />
       <div class="about-body"> I am a mad hatter hacker!</div>
       <ul>
         <li> </li>
@@ -89,7 +88,9 @@
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/projectController.js"></script>
     <script src="scripts/controller/routes.js"></script>
-    <script> app.Project.fetchAll();
+    <script>
+    // app.displayView.initIndex();
+    app.Project.fetchAll();
     app.Project.descriptionWordCount();
      </script>
   </body>

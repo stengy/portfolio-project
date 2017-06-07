@@ -6,9 +6,10 @@ var app = app || {};
   const homeController = {};
 
   homeController.init = function () {
-    $('#projects').hide();
+    $('#portfolio').hide();
     $('#about').hide();
 
+    $('#home').fadeIn(500);
 
   }
 

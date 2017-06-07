@@ -1,59 +1,54 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background-color: grey;
+  color: black;
+  background-color: #F6F7FA;
 }
 
-nav li{
+a{
+  text-decoration: none;
+  color: #838E92;
+}
+
+.connect {
+  margin-left: 0.2em;
+  float:left;
   display: inline;
-
+  text-align: left;
+  font-size: 3em;
 }
 
-a {
+.nav-link a {
   text-decoration: none;
 }
 
-nav a {
-  color: white;
+.connect a {
+  color: #F18B00;
+  font-size: 0.9em;
+  margin: -0.1em;
 }
-
-li{
-  color: white;
-  display: inline;
-}
-
-
-h2{
-  font-size: 30px;
-}
-
-h3{
-  font-size: 25px;
-}
-
-.my-info img{
-  width: 40px;
-  height:auto;
-  border-radius: 7px;
+.ham {
+  text-align: right;
+  float: right;
+  font-size: 3em;
 }
 
 .fa.fa-bars {
   display: inline-block;
+  margin-right: 0.2em;
 }
 
-#ham {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  text-align: right;
-  float: right;
-  font-size: 25px;
+.main-nav:hover ul {
+  display: block;
 }
+
 .main-nav {
   text-align:center;
   display: inline;
@@ -61,14 +56,9 @@ h3{
   font-size: 1.5em;
   float:left;
   width: 100%;
-
+  background-color: #002939;
 }
-
-.main-nav:hover ul {
-  display: block;
-}
-
-.main-nav ul{
+.main-nav ul {
   display: none;
   padding: 0;
   list-style: none;
@@ -79,6 +69,7 @@ h3{
   display: inline;
   margin-right: .2em;
   font-size: 1em;
+  font-family: 'Arimo', sans-serif;
 }
 
 .nav-menu {
@@ -94,10 +85,36 @@ ul li {
   display: inline;
 }
 
+#myPic {
+  text-align: center;
+}
 
-@media screen and (min-width: 715px) {
+#myPic img{
+  height: 300px;
+  width: auto;
+  border-radius: 15%;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.project-box img {
+  text-align: center;
+}
+
+#about img {
+  max-width: 100%;
+  margin-top: 35px;
+  width: 150px;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media screen and (min-width: 420px) {
    .fa.fa-bars {
      display: none;
+   }
+   .main-nav ul{
+     display: inline-block;
    }
    .main-nav ul, li {
      display: inline-block;

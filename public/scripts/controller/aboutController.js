@@ -6,7 +6,7 @@ var app = app || {};
   const aboutController = {};
 
   aboutController.init = function() {
-    $('#projects').hide();
+    $('#portfolio').hide();
     $('.tab-content').hide();
     $('#about').fadeIn(500);
     app.repos.fetchRepos(app.repoView.index);

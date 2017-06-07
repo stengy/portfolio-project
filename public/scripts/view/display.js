@@ -5,10 +5,9 @@ var app = app || {};
 (function(module){
   const displayView = {};
   displayView.initIndex = function() {
-
-    app.Project.all.forEach(function(project){
-      $('#projects').append(project.toHtml())
-    });
+    $('#about').hide();
+    $('#portfolio').hide();
+    $('#home').show();
   }
 
   module.displayView = displayView;
