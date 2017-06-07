@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Main Profile </title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style/base.css" />
+  <link rel="stylesheet" type="text/css" href="style/modules.css" />
+  <link rel="stylesheet" type="text/css" href="style/layout.css" />
+
+  <script class="projects-template" type="text/x-handlebars-template">
+    <div class="project-box">
+      <h2><a href={{projectUrl}} class="project-title"> {{title}}</a></h2>
+      <img src={{projectImg}} />
+      <div class"collabs">Collabrators: {{collaborators}}</div>
+      <div class="project-date">Date Completed: {{dateCompleted}} </div>
+      <p class="project-body"> {{{body}}} </p>
+    </div>
+  </script>
+
+  <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <section class="connect">
+        <a href="https://github.com/stengy" class="fa fa-github-alt"></a>
+        <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+        <a href="mailto:engy100x@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </section>
+      <div class="ham"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+      <ul>
+        <li data-content="home"><a href="/" class="nav-link">home</a></li>
+        <li data-content="projects"><a href="/portfolio" class="nav-link">projects</a></li>
+        <li data-content="about"><a href="/about" class="nav-link">about</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <section id="home" class="tab-content">
+      <h3> Devin J. Griswold </h3>
+      <div id="myPic">
+        <img src="imgs/dolive.jpg" />
+      </div>
+
+    </section>
+    <section id="portfolio" class="project-box" class="tab-content">
+
+    </section>
+
+
+    <section id="about" class="tab-content" >
+      <h2> About Me </h2>
+      <img class="its-me" src="imgs/dev.jpg" />
+      <div class="about-body"> I am a mad hatter hacker! Hello, my name is Devin Griswold.  I am a U.S. Army veteran with a background in IT realm of tech.  I have always been interested in the idea of being a programmer but it wasn't until recently that I decided to make it a reality.  I have a huge interest in AR/VR technology and what it could mean for the future.  Technology in today's world and what is becoming ever more possible is just completely facinating to me.  I figured the best way to make future possibilities manifest is to actively take part in it; on a mission to make the world a better place.  Other than technology, I am a complete Thespian!.  Anything dealing with theatre or film and I'm there.  My favorite musical is 'My Fair Lady'.</div>
+      <img class="it-joke" src="imgs/binaryjoke.jpg"/>
+      <ul>
+        <li> </li>
+      </ul>
+    </section>
+
+
+    <!-- Libs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <!-- Files -->
+
+    <script src="scripts/model/app.js"></script>
+
+    <script src="scripts/model/repos.js"></script>
+    <script src="scripts/view/repoView.js"></script>
+    <script src="scripts/controller/homeController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/projectController.js"></script>
+    <script src="scripts/controller/routes.js"></script>
+    <script>
+    // app.displayView.initIndex();
+    app.Project.fetchAll();
+    app.Project.descriptionWordCount();
+     </script>
+  </body>
+  </html>

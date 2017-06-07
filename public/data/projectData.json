@@ -1,0 +1,21 @@
+
+ [
+  {
+    "title": "Wine Fellows",
+    "projectUrl": "https://axelmichael11.github.io/Wine_Fellows/",
+    "projectImg": "imgs/winegroup.jpg",
+    "collaborators": "Michael Axelson, Stephanie Dover, Ryan Turner",
+    "dateCompleted": "04-28-2017",
+    "body":" This was my final project for 201 at Code Fellows in Seattle, WA.  Our idea was that, as wine lovers, it would be amazing if there were something similar to other social media apps where wine folks like ourselves could meet new fellows to share in some drink together.  It was my, and the groups, first major implementation of maintaining persistence.  Feel free to check it out!"
+  },
+
+  {
+    "title": "Trivia Ninja",
+    "projectUrl": "https://trivia-ninja.herokuapp.com/",
+    "projectImg": "imgs/ninja-star-18485.jpg",
+    "collaborators": "Nicu Parente, Michael Porter",
+    "dateCompleted": "06-02-2017",
+    "body": "One of the best collaborative experiences of my entire life!  As a final project for 301 at Code Fellows I am pretty happy with the way this turned out.  First to mention is the team!  We had amazing work flow, wonderful joyous attitudes, and a committment to making something fun and enjoyable, while trying to show a little head-nod to the anime that inspired us.  I learned a lot about working with databases and using an API during this project, and overall the class to be fair.  Please check out the game, play it and as always feel free to leave feedback or note any issues at our github."
+  }
+
+]

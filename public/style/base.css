@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  color: black;
+  background-color: #F6F7FA;
+}
+
+a{
+  text-decoration: none;
+  color: #838E92;
+}
+
+
+
+ul li {
+  text-align: center;
+  display: inline;
+}

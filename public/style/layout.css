@@ -1,0 +1,21 @@
+@media screen and (min-width: 620px) {
+   .fa.fa-bars {
+     display: none;
+   }
+
+   .main-nav ul, li {
+     display: inline-block;
+     font-size: 1em;
+     padding: .5em 0 .5em 0;
+   }
+   .main-nav:hover ul, li {
+     display: inline-block;
+   }
+   .nav-menu {
+     text-align: center;
+     display:inline;
+     width:33%;
+     margin-top: 14px;
+     margin-right: 213px;
+   }
+}
