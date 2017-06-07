@@ -8,7 +8,7 @@ const requestProxy = require('express-request-proxy');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-const conString = process.env.DATABASE_URL || 'postgres://postgres:1234@localhost:5432/kilovolt';
+const conString = process.env.DATABASE_URL || 'postgres://postgres:1234@localhost:5432/postgres';
 
 const client = new pg.Client(conString);
 client.connect();
