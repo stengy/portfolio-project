@@ -1,100 +1,112 @@
-/*Header Region*/
-
-.main-nav{
-  display: block;
-  position: absolute;
-  width: 100%;
-  padding: 2vh;
-}
-.main-nav ul{
+.connect {
+  margin-left: 0.2em;
+  float:left;
   display: inline;
-  width: 100%;
-  color: #FFF;
+  text-align: left;
+  font-size: 3em;
 }
 
-.main-nav li{
-  display: inline;
+
+.connect a {
+  color: #F18B00;
+  font-size: 0.9em;
+  margin: -0.1em;
+}
+.ham {
+  text-align: right;
   float: right;
+  font-size: 3em;
+}
+
+.fa.fa-bars {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav {
+  text-align:center;
+  display: inline;
+  padding: 0.1em;
   font-size: 1.5em;
-}
-
-
-.fa-bars {
-  /*display: none;*/
-  font-size: 3em;
-  color: #FFF;
-  padding: 1rem;
-}
-
-
-/*Info Blurb Region*/
-
-.my-info img{
-  width: 50px;
-  height: auto;
-  border-radius: 15%
-}
-
-
-
-/*Project Region*/
-.project-box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  top: 20vh;
-  height: 70vh;
+  float:left;
   width: 100%;
-  background-color: #FFF;
+  background-color: #002939;
+}
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
 }
 
-.project-title {
+.main-nav li {
+  display: inline;
+  margin-right: .2em;
+  font-size: 1em;
+  font-family: 'Arimo', sans-serif;
+}
+
+.nav-menu {
   text-align: center;
-  font-weight:bolder;
-  width: 100%;
-  font-size: 4em;
+  display:inline;
+  width:33%;
+  margin-top: 14px;
+  /*margin-right: 213px;*/
 }
 
-.project-container{
-  display:block;
-  top: 5vh;
-  padding: 2vw 2vh;
-  margin: 1em;
-  width: 20%;
-  height: 40%;
-  background-color: grey;
-  color: #FFF;
-}
-
-/*About Region*/
-.about-box{
-  position: relative;
-  top: 15vh;
-  margin: auto;
-  width: 85vw;
-  height: 60%;
-  color: white;
+#myPic {
   text-align: center;
-  background-color: black;
-  border-radius: 4px;
 }
 
-.about-box h2{
-  padding-top: 4vh;
-  color: white;
-  font-size: 3em;
-  font-weight: 600;
-  margin: auto;
+#myPic img{
+  width: 750px;
+  height: 500px;
+  border-radius: 25%;
+  max-width: 100%;
+  margin-top: 50px;
 }
 
+#about{
+  text-align: center;
+}
+#about h2{
+  font-size: 2em;
+}
 .about-body{
-  position: block;
-  color: yellow;
-  margin-top: 10vh;
-  text-align: justify;
-  background-color: blue;
-  width: 60vw;
-  margin-left: 3%;
-  padding: 1vw 1.5vh;
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 3em;
+}
+.project-box img {
+  text-align: center;
+}
+
+.its-me {
+  max-width: 100%;
+  margin-top: 35px;
+  width: 150px;
+  height: auto;
+  border-radius: 10%;
+
+}
+.it-joke{
+  margin-top: 35px;
+  width: 650px;
+  height: auto;
+  border-radius: 34%;
+}
+.project-box{
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+.project-box img{
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
